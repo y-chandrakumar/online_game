@@ -90,6 +90,6 @@ app.get('/',(req,res)=>{
 })
 
 
-server.listen(port,()=>{
+server.listen(process.env.PORT || port,()=>{
     console.log(`example app listening on port ${port}`)
 })
